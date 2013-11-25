@@ -32,7 +32,7 @@
                          <entry key="Login4User">
                             <array>
                                 <bean class="javax.security.auth.login.AppConfigurationEntry">
-                                    <constructor-arg value="com.secure.isecure.Login4Users" />
+                                    <constructor-arg value="app.secure.isecure.Login4Users" />
                                     <constructor-arg>
                                         <util:constant static-field= "javax.security.auth.login.AppConfigurationEntry$LoginModuleControlFlag.REQUIRED"/>
                                     </constructor-arg>
@@ -49,7 +49,7 @@
         <property name="authorityGranters">
             <list>
                 <!-- You will need to write your own implementation of AuthorityGranter -->
-                <bean class="com.secure.isecure.core.AutorityGrantCore"/>
+                <bean class="app.secure.isecure.core.AutorityGrantCore"/>
             </list>
         </property>
     </bean>

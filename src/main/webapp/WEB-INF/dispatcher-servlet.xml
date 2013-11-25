@@ -11,7 +11,7 @@
         http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd
 	http://www.springframework.org/schema/oxm http://www.springframework.org/schema/oxm/spring-oxm-3.1.xsd
         ">
-    <context:component-scan base-package="com.event.common.controller" />
+    <context:component-scan base-package="app.event.common.controller" />
     <mvc:annotation-driven />
     <bean
         class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
@@ -39,11 +39,11 @@
                     </constructor-arg> 
                 </bean>
                 <!--  RSS View -->
-                <bean class="com.event.common.rss.RssFeedView" />
+                <bean class="app.event.common.rss.RssFeedView" />
                 <!-- ATOM view -->
-                <bean class="com.event.common.atom.AtomFeedView" />
+                <bean class="app.event.common.atom.AtomFeedView" />
                 <!-- pdf view -->
-                <bean class="com.event.common.pdf.PdfView" />
+                <bean class="app.event.common.pdf.PdfView" />
             </list>
         </property>
         <property name="ignoreAcceptHeader" value="true" />
@@ -61,7 +61,7 @@
         </property>
     </bean>
     <oxm:jaxb2-marshaller id="marshaller" >
-        <oxm:class-to-be-bound name="com.event.common.model.Fruit"/> 
+        <oxm:class-to-be-bound name="app.event.common.model.Fruit"/> 
     </oxm:jaxb2-marshaller>
     <!--<bean class="org.springframework.oxm.jaxb.Jaxb2Marshaller"> 
         <property name="classesToBeBound"> 
