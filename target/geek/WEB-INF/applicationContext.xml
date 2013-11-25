@@ -12,17 +12,6 @@
    <!-- 	<security:http auto-config='true'>
 		<security:intercept-url pattern="/**" access="ROLE_USER" />
 		<security:http-basic />
-	</security:http> -->
-	<bean id="jaxbMarshaller" class="org.springframework.web.servlet.view.xml.MarshallingView">
-                    <constructor-arg>
-                        <bean  class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
-                            <property name="classesToBeBound">
-                                <list>
-                                    <value>com.event.common.model.Fruit</value>
-                                </list>
-                            </property>
-                        </bean>
-                    </constructor-arg>
-          </bean>
-
+	</security:http>-->
+	<import resource = "security.xml" />
 </beans>
