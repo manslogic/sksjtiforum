@@ -1,4 +1,4 @@
-package com.event.common.pdf;
+package app.event.common.pdf;
 
 import java.util.Date;
 import java.util.Map;
@@ -11,7 +11,7 @@ import org.springframework.web.servlet.view.document.AbstractPdfView;
 import com.lowagie.text.Document;
 import com.lowagie.text.Table;
 import com.lowagie.text.pdf.PdfWriter;
-import com.event.common.model.Fruit;
+import app.event.common.model.Fruit;
 
 public class PdfView extends AbstractPdfView {
 

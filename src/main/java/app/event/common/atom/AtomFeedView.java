@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.event.common.atom;
+package app.event.common.atom;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.web.servlet.view.feed.AbstractAtomFeedView;
 
-import com.event.common.model.Fruit;
+import app.event.common.model.Fruit;
 import com.sun.syndication.feed.atom.Content;
 import com.sun.syndication.feed.atom.Entry;
 import com.sun.syndication.feed.atom.Feed;

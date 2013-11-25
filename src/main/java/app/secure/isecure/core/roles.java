@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.secure.isecure.core;
+package app.secure.isecure.core;
 
 import java.io.Serializable;
 

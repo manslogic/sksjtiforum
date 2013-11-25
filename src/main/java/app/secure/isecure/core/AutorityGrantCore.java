@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.secure.isecure.core;
+package app.secure.isecure.core;
 
 import java.security.Principal;
 import java.util.HashSet;

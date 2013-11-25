@@ -1,4 +1,4 @@
-package com.secure.isecure;
+package app.secure.isecure;
 
 import java.io.IOException;
 import java.io.Serializable;
