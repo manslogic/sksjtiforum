@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context antiJARLocking="true" path="/geek"/>
+<Context antiJARLocking="true" path="/geek">
+<Resource name="jdbc/seek" auth="Container" type="javax.sql.DataSource"
+               maxActive="50" maxIdle="30" maxWait="10000"
+               username="mysqluser" password="mysqlpassword" 
+               driverClassName="com.mysql.jdbc.Driver"
+               url="jdbc:mysql://localhost:3306/mydb"/>
+</Context>

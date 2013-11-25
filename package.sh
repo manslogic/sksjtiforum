@@ -1,2 +1,2 @@
 mvn  clean
-mvn  tomcat:redeploy
+mvn  package
