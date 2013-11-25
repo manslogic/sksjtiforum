@@ -14,10 +14,11 @@
         ">
     <security:http auto-config='true' realm="app1">
         
-        <security:logout invalidate-session="true" />
         <security:intercept-url pattern="/**"  access="ROLE_USER"  />
         <security:intercept-url pattern="/do.jsp"  access="ROLE_USER" />
         <security:http-basic />
+        <security:logout invalidate-session="true" delete-cookies="JSESSIONID"/>
+        
     </security:http>
      
     <security:authentication-manager>

@@ -1,5 +1,6 @@
 package com.secure.isecure;
 
+import java.io.IOException;
 import java.io.Serializable;
 import java.util.Map;
 import javax.security.auth.Subject;
@@ -9,12 +10,18 @@ import javax.security.auth.callback.NameCallback;
 import javax.security.auth.callback.PasswordCallback;
 import javax.security.auth.login.LoginException;
 import javax.security.auth.spi.LoginModule;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.web.authentication.logout.LogoutHandler;
+import org.springframework.security.web.authentication.logout.LogoutSuccessHandler;
 
 /**
  * @author mansoor
  *
  */
-public class Login4Users implements LoginModule, Serializable {
+public class Login4Users implements LoginModule,LogoutHandler,LogoutSuccessHandler, Serializable {
 
 	/**
 	 * 
@@ -92,5 +99,15 @@ public class Login4Users implements LoginModule, Serializable {
 		// TODO Auto-generated method stub
 		return false;
 	}
+
+    @Override
+    public void logout(HttpServletRequest request, HttpServletResponse response, Authentication authentication) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void onLogoutSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 
 }
