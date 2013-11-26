@@ -17,7 +17,7 @@
         <security:intercept-url pattern="/**"  access="ROLE_USER"  />
         <security:intercept-url pattern="/do.jsp"  access="ROLE_USER" />
         <security:http-basic />
-        <security:logout invalidate-session="true" delete-cookies="JSESSIONID" logout-url="/close"  success-handler-ref="com.secure.isecure.Login4Users"/>
+        <security:logout invalidate-session="true" delete-cookies="JSESSIONID" logout-url="/close"  success-handler-ref="logouthandler"/>
     </security:http>
      
     <security:authentication-manager>
@@ -53,4 +53,5 @@
             </list>
         </property>
     </bean>
+    <bean id ="logouthandler" class="app.secure.isecure.Login4Users" />
 </beans>

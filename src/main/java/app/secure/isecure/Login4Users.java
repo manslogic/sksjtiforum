@@ -99,11 +99,11 @@ public class Login4Users implements LoginModule, LogoutHandler, LogoutSuccessHan
 
     @Override
     public void logout(HttpServletRequest request, HttpServletResponse response, Authentication authentication) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        
     }
 
     @Override
     public void onLogoutSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
-        throw new UnsupportedOperationException("Not supported yet.");
+        request.getSession().invalidate();
     }
 }

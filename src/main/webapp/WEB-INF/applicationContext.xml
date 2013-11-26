@@ -13,5 +13,5 @@
 		<security:intercept-url pattern="/**" access="ROLE_USER" />
 		<security:http-basic />
 	</security:http>-->
-	<import resource = "security.xml" />
+	<import resource = "/security.xml" />
 </beans>

@@ -34,11 +34,15 @@
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
+    
+    
     <session-config>
         <session-timeout>
-            30
+            5
         </session-timeout>
     </session-config>
+    
+    
     <welcome-file-list>
         <welcome-file>/fruit/mango</welcome-file>
     </welcome-file-list>
